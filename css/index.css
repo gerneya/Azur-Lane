@@ -1,0 +1,211 @@
+body {
+    background-image: url(../images/背景.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nav-bg {
+    background-color: rgba(126, 125, 171, 0.599);
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(224, 224, 224);
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+    background-color: rgb(224, 224, 224);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(224, 224, 224);
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: rgb(173, 255, 243);
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(247, 243, 165);
+}
+
+.box {
+    color: rgb(224, 224, 224);
+    background-color: rgba(87, 78, 85, 0.599);
+    padding: 25px;
+}
+
+.top {
+    margin-bottom: 20px;
+}
+
+.navbar {
+    
+    background-color: #1e3147; /* 背景色改成淺藍色 */
+    border-bottom: 1px solid #e5e5e5; /* 底部邊框 */
+}
+
+/* 調整ID為001img的圖片樣式 */
+#001img {
+    width: 300px; /* 設定圖片寬度，可根據需要調整 */
+    max-width: 100%; /* 設定圖片的最大寬度為父容器寬度，以確保在較小螢幕上不會溢出 */
+    float: left; /* 圖片浮動至左邊 */
+    margin-right: 10px; /* 右邊距 20px，可根據需要調整 */
+}
+
+/* 清除浮動，以確保內文正確繞著圖片排列 */
+.box::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.ic1{
+    color: aquamarine;
+    size: 20px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.card-title{
+    color: rgb(37, 73, 180);
+}
+.card-text{
+    color: #13094b;
+}
+
+.center-horizontal {
+    height: 50;
+    left: 50px;
+   
+    
+    background-size:auto;
+    margin: 20px;
+    margin-left:140px;
+     /* 設定最大寬度為 400 像素 */
+   
+    padding: 20px; /* 可以添加一些內邊距 */
+}
+
+.txt-box{
+    color: #284860;
+    left: 400px;
+    
+}
+
+.txt-box1{
+    color: #d3ecff;
+    left: 400px;
+    
+}
+
+.f01{
+   
+    height: auto; /* 根據寬度等比例縮放高度 */
+}
+
+.box1{
+    flex: 1;
+    order: 1;
+   
+}
+
+.box2{
+    flex: 1;
+   order: 2;
+   margin-top: 60px; /* 調整上邊距，您可以根據需要調整數值 */
+   color: #07010c;
+   margin: left -140px;
+   max-width: 600px; /* 設定最大寬度，您可以根據需要調整數值 */
+    max-height: 300px; /* 設定最大高度，您可以根據需要調整數值 */
+    
+}
+
+.box3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 將畫面分為兩欄，每一欄寬度相等 */
+    gap: 20px; /* 設定欄間距 */
+    height: auto; 
+    height: 500px;
+    background-color: #c4ccd567;
+}
+
+.box4{
+    flex: 1;
+    order: 1;
+    margin-top: 60px; /* 調整上邊距，您可以根據需要調整數值 */
+    color: #07010c;
+    margin-left: 140px
+   
+
+}
+
+.box5{
+    flex: 1;
+   order: 2;
+   margin-top: 60px; /* 調整上邊距，您可以根據需要調整數值 */
+   color: #07010c;
+}
+
+.box6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 將畫面分為兩欄，每一欄寬度相等 */
+    gap: 20px; /* 設定欄間距 */
+    height: auto; 
+    height: 500px; 
+    background-color: #7492b488;
+}
+
+.box10{
+    height: auto; 
+    height: 800px; 
+}
+
+.vcenter {
+	position: absolute;
+	left: 50%;
+	top: 80%;
+	color: #ffffff;
+	text-align: center;
+	/*以下 transform，主要是讓此元素往左移動自己本身寬度的50%，也往上左移動自己本身高度的50%，而前方所加的-xxx-前綴詞，是for不同瀏覽器的*/
+	-webkit-transform: translateX(-50%) translateY(-50%); /* Chrome, newer versions of Opera*/
+	-moz-transform: translateX(-50%) translateY(-50%); /* Firefox */
+	-ms-transform: translateX(-50%) translateY(-50%); /* nternet Explorer */
+	-o-transform: translateX(-50%) translateY(-50%); /* Old versions of Opera */
+	transform: translateX(-50%) translateY(-50%); /* 沒限制，有支援的瀏覽器就會run */
+	text-align: center; /*裡面的文字置中*/
+}
+.bg_1 {
+	background-image: url(../images/背景.png);
+
+}
+
+.fixed_bg {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.shadow { 
+	text-shadow: 12px 12px 10px rgba(133, 116, 89, 0.9); /*文字陰影效果*/ 
+}
+.fixed_bg, .infos {
+	position: relative;
+	height: 100%;
+}
+.fixed_bg {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.bg_1 {
+	background-image: url(../images/正式啟航.jpg);
+}
